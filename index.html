@@ -6,16 +6,27 @@
     </head>
     <body>
         <div id="top-container">
-            <a>Gmail</a>
-            <a>Images</a>
+            <div id="about-store-container">
+                <a href="https://about.google/">About</a>
+                <a href="https://store.google.com/">Store</a>
+            </div>
+            <div id="gmail-images-container">
+                <a href="https://mail.google.com/">Gmail</a>
+                <a>Images</a>
+            </div>
         </div>
         <div id="center-container">
             <div id="google-logo">
                 <img src="googlelogo.png" alt="Google Logo">
             </div>
             <form action="https://google.com/search">
-                <input type="text" name="q">
-                <input type="submit" value="Google Search">
+                <div id="search-container">
+                    <input type="text" name="q" id="search-bar">
+                </div>
+                <div id="search-buttons">
+                    <input type="submit" value="Google Search">
+                    <input type="submit" value="I'm Feeling Lucky">
+                </div>
             </form>
         </div>
     </body>
