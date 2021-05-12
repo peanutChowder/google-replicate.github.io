@@ -1,7 +1,11 @@
-body {
+html, body {
     margin: 0;
+    height: 100%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 #top-container {
@@ -28,27 +32,27 @@ body {
     padding-left: 18px;
 }
 #center-container   {
-    margin-top: 200px;    
+    margin-top: 207px;  
+    flex-grow: 1;  
 }
+
 #google-logo {
-    height: auto;
     text-align: center;
 }
 
 #search-container {
     text-align: center;
-    margin-top: 15px;
+    margin-top: 22px;
 }
 
 #search-bar {
-    padding: 9px 30px;
-    width: 390px;
+    padding: 14px 30px;
+    width: 55%;
     border-radius: 40px;
     border-style: solid;
     border-width: 1px;
     border-color: rgb(202, 202, 202);
     outline: 0px;
-
 }
 
 #search-buttons {
@@ -60,6 +64,26 @@ body {
     background-color: rgb(248, 248, 248);
     border-style: none;
     padding: 10px 18px;
-    margin: 0px 8px;
+    margin: 0px 6px;
     border-radius: 2px;
+}
+
+#bottom-container {
+    background-color: rgb(240, 240, 240);
+}
+
+#bottom-container > div {
+    padding: 15px 10px;
+    color: rgb(116, 116, 116)
+}
+
+#faq-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-top: 1px solid rgb(219, 219, 219);
+}
+
+#faq-bar a {
+    padding: 0px 12px;
 }
