@@ -8,6 +8,7 @@ html, body {
     
 }
 
+
 #top-container {
     padding-top: 21px;
     height: 30px;
@@ -46,13 +47,46 @@ html, body {
 }
 
 #search-bar {
-    padding: 14px 30px;
-    width: 55%;
+    width: 60%;
+    margin: auto;
+    position: relative;
+}
+
+#search-bar input {
+    padding: 14px 45px;
+    box-sizing: border-box;
+    width: 100%;
     border-radius: 40px;
     border-style: solid;
-    border-width: 1px;
+    border-width: 1px; 
     border-color: rgb(202, 202, 202);
     outline: 0px;
+}
+
+#search-icon {
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    stroke: rgb(160, 160, 160);
+}
+
+#search-icon circle {
+    cx: 12;
+    cy: 12;
+    r: 4.5;  
+    stroke-width: 1.5;
+    fill: none;
+}
+
+#search-icon line {
+    stroke-width: 1.5;
+}
+
+#search-bar input:hover {
+    box-shadow: 0px 0px 7px 1px rgb(226, 226, 226);
+    
 }
 
 #search-buttons {
@@ -66,6 +100,12 @@ html, body {
     padding: 10px 18px;
     margin: 0px 6px;
     border-radius: 2px;
+    color: rgb(88, 87, 87);
+}
+
+#search-buttons input:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 2px 1px rgb(218, 218, 218);
 }
 
 #bottom-container {
