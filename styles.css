@@ -47,7 +47,7 @@ html, body {
 }
 
 #search-bar {
-    width: 60%;
+    width: 600px;
     margin: auto;
     position: relative;
 }
