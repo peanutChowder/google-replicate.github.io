@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Advanced Search</title>
+        <link rel="stylesheet" href="advanced-search-styles.css">
+    </head>
+    <body>
+        <div id="header">
+            <div id="logo-container">
+                <img id="google-logo" src="googlelogo.png" alt="Google Logo" title="Go to Google Home">
+            </div>
+            <div id="title-wrapper">
+                Advanced Search
+            </div>
+        </div>
+        <div id="search-filters">
+            
+            <form action="https://google.com/search">
+                <div id="search-keywords">
+                    <div id="standard-search-container">
+                        <label for="standard-search">all these words:</label>
+                        <input type="text" id="standard-search" name="q">
+                    </div>
+                    <div id="exact-filter-container">
+                        <label for="exact-filter">this exact word or phase:</label>
+                        <input type="text" id="exact-filter" name="as_epq">
+                    </div>
+                    <div id="or-filter-container">
+                        <label for="or-filter">any of these words:</label>
+                        <input type="text" id="or-filter" name="as_oq">
+                    </div>
+                    <div id="negate-filter-container">
+                        <label for="negate-filter">none of these words:</label>
+                        <input type="text" id="negate-filter" name="as_eq">
+                    </div>
+                    <div id="number-range-filter-container">
+                        <label for="lower-limit">numbers ranging from:</label>
+                        <input type="text" id="lower-limit" name="as_nlo">
+                        <label for="higher-limit">to</label>
+                        <input type="text" id="higher-limit" name="as_nhi">
+                    </div>
+                </div>
+                <div id="search-specificers">
+                    <!-- TODO: create the lower half of search filters -->
+                </div>
+                <input type="submit" value="Advanced Search">
+            </form>
+        </div>
+
+    </body>
+</html>

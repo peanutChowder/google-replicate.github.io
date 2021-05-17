@@ -1,0 +1,26 @@
+html, body {
+    margin: 0;
+    font-family: arial, sans-serif;
+}
+
+#header {
+    height: 100px;
+    border-bottom: solid 1px rgb(224, 224, 224);
+    padding: 20px;
+}
+
+#logo-container {
+    padding-bottom: 30px;
+}
+
+#google-logo {
+    height: 24px;
+    width: 74px;
+}
+
+#title-wrapper {
+    padding-left: 25px;
+    padding-top: 13px;
+    color: rgb(212, 18, 18);
+    font-size: 20px;
+}
