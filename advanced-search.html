@@ -9,42 +9,54 @@
             <div id="logo-container">
                 <img id="google-logo" src="googlelogo.png" alt="Google Logo" title="Go to Google Home">
             </div>
-            <div id="title-wrapper">
+            <h1 id="title-wrapper">
                 Advanced Search
-            </div>
+            </h1>
         </div>
         <div id="search-filters">
-            
             <form action="https://google.com/search">
-                <div id="search-keywords">
+                <div id="search-terms">
+                    <div>
+                        <h2>Find pages with...</h2>
+                        <h2>To do this in the search box.</h2>
+                    </div>
                     <div id="standard-search-container">
                         <label for="standard-search">all these words:</label>
                         <input type="text" id="standard-search" name="q">
+                        <span class="description">Type the important words: </span><span class="description-emphasis">tri-colour rat terrier</span>
                     </div>
                     <div id="exact-filter-container">
                         <label for="exact-filter">this exact word or phase:</label>
                         <input type="text" id="exact-filter" name="as_epq">
+                        <span class="description">Put exact words in quotes: </span><span class="description-emphasis">"rat terrier"</span>
                     </div>
                     <div id="or-filter-container">
                         <label for="or-filter">any of these words:</label>
                         <input type="text" id="or-filter" name="as_oq">
+                        <span class="description">Type </span><span class="description-emphasis">OR</span><span class="description"> between all the words you want: </span><span class="description-emphasis">miniature OR standard</span>
                     </div>
                     <div id="negate-filter-container">
                         <label for="negate-filter">none of these words:</label>
                         <input type="text" id="negate-filter" name="as_eq">
+                        <span class="description">Put a minus sign just before words that you don't want:</span><span class="description-emphasis"> -rodent, -"Jack Russell"</span>
                     </div>
                     <div id="number-range-filter-container">
                         <label for="lower-limit">numbers ranging from:</label>
                         <input type="text" id="lower-limit" name="as_nlo">
                         <label for="higher-limit">to</label>
                         <input type="text" id="higher-limit" name="as_nhi">
+                        <span class="description">Put two full stops between the numbers and add a unit of measurement:</span><span class="description-emphasis"> 10..35 kg, £300..£500, 2010..2011
+                        </span>
                     </div>
                 </div>
-                <div id="search-specificers">
+                <div id="search-specifiers">
+                    <div>
+                        <h2>Then narrow your results by...</h2>
+                    </div>
                     <div id="language-filter-container">
                         <label for="language-filter">language:</label>
                         <select id="language-filter" name="lr">
-                            <option value="">any Language</option>
+                            <option value="">any language</option>
                             <option value="lang_af">Afrikaans</option>
                             <option value="lang_ar">Arabic</option>
                             <option value="lang_hy">Armenian</option>
@@ -90,6 +102,7 @@
                             <option value="lang_uk">Ukrainian</option>
                             <option value="lang_vi">Vietnamese</option>
                         </select>
+                        <span class="description">Find pages in the language that you select.</span>
                     </div>
                     <div id="region-filter-container">
                         <label for="region-filter">region:</label>
@@ -329,6 +342,7 @@
                             <option value="countryZM">Zambia</option>
                             <option value="countryZW">Zimbabwe</option>
                         </select>
+                        <span class="description">Find pages published in a particular region</span>
                     </div>
                     <div id="update-filter-container">
                         <label for="update-filter">last update:</label>
@@ -339,10 +353,12 @@
                             <option value="m">upto a month ago</option>
                             <option value="y">upto a year ago</option>
                         </select>
+                        <span class="description">Find pages updated within the time that you specify</span>
                     </div>
                     <div id="site-filter-container">
                         <label for="site-filter">site or domain:</label>
                         <input type="text" id="site-filter" name="as_sitesearch">
+                        <span class="description">Search one site (like </span><span class="description-emphasis">wikipedia.org</span><span class="description"> ) or limit your results to a domain like </span><span class="description-emphasis">.edu, .org</span><span class="description"> or</span><span class="description-emphasis"> .gov</span>
                     </div>
                     <div id="term-position-filter-container">
                         <label for="term-position-filter">terms appearing:</label>
@@ -353,6 +369,8 @@
                             <option value="url">in the URL of the page</option>
                             <option value="links">in links to the page</option>
                         </select>
+                        <span class="description">Search for terms in the whole page, page title or web address, or links to the page you're looking for.
+                        </span>
                     </div>
                     <div id="safesearch-filter-container">
                         <label for="safesearch-filter">SafeSearch</label>
@@ -360,6 +378,7 @@
                             <option value="images">Show explicit results</option>
                             <option value="active">Hide explicit results</option>
                         </select>
+                        <span class="description">Tell SafeSearch whether to filter sexually explicit content.</span>
                     </div>
                     <div id="file-filter-container">
                         <label for="file-filter">file type:</label>
@@ -376,6 +395,7 @@
                             <option value="rtf">Rich Text Format (.rtf)</option>
                             <option value="swf">Shockwave Flash (.swf)</option>
                         </select>
+                        <span class="description">Find pages in the format that you prefer.</span>
                     </div>
                     <div id="usage-filter-container">
                         <label for="usage-filter">usage rights</label>
@@ -386,9 +406,10 @@
                             <option value="(cc_publicdomain|cc_attribute|cc_sharealike|cc_noncommercial).-(cc_nonderived)">free to use share or modify</option>
                             <option value="(cc_publicdomain|cc_attribute|cc_sharealike).-(cc_noncommercial|cc_nonderived)">free to use, share or modify, even commercially</option>
                         </select>
+                        <span class="description">Find pages that you are free to use yourself.</span>
                     </div>
+                    <input type="submit" value="Advanced Search">
                 </div>
-                <input type="submit" value="Advanced Search">
             </form>
         </div>
 
