@@ -78,13 +78,21 @@ form > div {
     font-size: 11px;
 }
 
+.description-indent {
+    padding-left: 20px;
+}
+
 .description-emphasis {
     font-size: 11px;
     font-family: monospace;
 }
 
+#legend-title {
+    margin-right: 640px;
+}
+
 #number-range-filter-container > input {
-    width: 100px;
+    width: 275px;
 }
 
 #search-filters label {
@@ -93,3 +101,76 @@ form > div {
     font-size: 13px;
 }
 
+#to {
+    font-size: 13px;
+    margin: 0px 5px;
+}
+
+#search-button-wrapper {
+    padding-top: 10px;
+    width: 765px;
+    text-align: end;
+}
+
+#search-button-wrapper > input {
+    width: 150px;
+    height: 35px;
+    background-color: rgb(38, 114, 255);
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    border: none;
+    border-radius: 2px;
+}
+
+#search-button:hover {
+    background-color: rgb(37, 108, 240);
+    border: solid 1px black;
+}
+
+#suggestions {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    margin-left: 40px;
+}
+
+#suggestions a {
+    width: 210px;
+    text-decoration: none;
+    color: rgb(0, 0, 224);
+    margin: 3px 0px;
+}
+
+#suggestions a:hover {
+    text-decoration: underline;
+}
+
+#suggestions a:visited {
+    color: rgb(0, 0, 224);
+}
+
+#footer {
+    margin-top: 50px;
+    background-color: rgb(240, 240, 240);
+}
+
+#footer > div {
+    padding: 15px 40px;
+    color: rgb(116, 116, 116);
+    font-size: 15px;
+}
+
+#faq-bar {
+    border-top: 1px solid rgb(219, 219, 219);
+}
+
+#faq-bar a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: rgb(116, 116, 116);
+}
+
+#faq-bar a:hover {
+    color: black;
+}
