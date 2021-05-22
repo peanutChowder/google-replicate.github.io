@@ -1,0 +1,165 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#top-container a:hover {
+    text-decoration: underline;
+}
+#gmail-images-container {
+    padding-right: 18px;
+}
+
+#about-store-container {
+    padding-left: 18px;
+}
+#center-container   {
+    margin-top: 207px;  
+    flex-grow: 1;  
+    text-align: center;
+}
+
+#google-logo {
+    margin: auto;
+    width: 300px;
+    position: relative;
+}
+
+#images-logo {
+    position: absolute;
+    right: 20px;
+    bottom: 5px;
+    color: rgb(0, 110, 255);
+    font-size: 16px;
+}
+
+#search-container {
+    text-align: center;
+    margin-top: 22px;
+}
+
+#search-bar {
+    width: 600px;
+    margin: auto;
+    position: relative;
+}
+
+#search-bar input {
+    padding: 14px 45px;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 40px;
+    border-style: solid;
+    border-width: 1px; 
+    border-color: rgb(202, 202, 202);
+    outline: 0px;
+}
+
+#search-icon {
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    stroke: rgb(160, 160, 160);
+}
+
+#search-icon circle {
+    cx: 12;
+    cy: 12;
+    r: 4.5;  
+    stroke-width: 1.5;
+    fill: none;
+}
+
+#search-icon line {
+    stroke-width: 1.5;
+}
+
+#search-bar input:hover {
+    box-shadow: 0px 0px 7px 1px rgb(226, 226, 226);
+    
+}
+
+#search-buttons {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#search-buttons input {
+    background-color: rgb(248, 248, 248);
+    border-style: none;
+    padding: 10px 18px;
+    margin: 0px 6px;
+    border-radius: 2px;
+    color: rgb(88, 87, 87);
+}
+
+#search-buttons input:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 2px 1px rgb(218, 218, 218);
+}
+
+#bottom-container {
+    background-color: rgb(240, 240, 240);
+    position: relative;
+}
+
+#bottom-container > div, button {
+    padding: 15px 20px;
+    color: rgb(116, 116, 116)
+}
+
+#faq-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid rgb(219, 219, 219);
+}
+
+#faq-bar a, button {
+    padding: 0px 12px;
+}
+
+#settings {
+    border: none;
+}
+
+#settings-dropdown {
+    display: none;
+    list-style-type: none;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    border: 1px solid black;
+    padding: 10px 10px;
+    width: 150px;
+    bottom: 32px;
+    right: 20px;
+    height: 200px;
+    background-color: white;
+}
+
+#settings-dropdown a {
+    display: flex;
+    flex-direction: column;
+}
+
+#faq-bar a:hover, #settings:hover{
+    text-decoration: underline;
+}
+
+#settings-container:focus-within #settings-dropdown {
+    display: flex;
+}
+

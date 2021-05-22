@@ -2,24 +2,17 @@
 <html lang="en">
     <head>
         <title>Google</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="image-search-styles.css">
     </head>
     <body>
-        <div id="top-container">
-            <div id="about-store-container">
-                <a class="links" href="https://about.google/">About</a>
-                <a href="https://store.google.com/">Store</a>
-            </div>
-            <div id="gmail-images-container">
-                <a href="https://mail.google.com/">Gmail</a>
-                <a href="image-search.html">Images</a>
-            </div>
-        </div>
         <div id="center-container">
-            <div id="google-logo">
-                <img src="googlelogo.png" alt="Google Logo">
+            <div id="google-logo-container">
+                <div id="google-logo"> 
+                    <img src="googlelogo.png" alt="Google Images Logo">
+                    <span id="images-logo">images</span>
+                </div>
             </div>
-            <form action="https://google.com/search">
+            <form action="https://images.google.com/images">
                 <div id="search-container">
                     <div id="search-bar">
                         <input type="text" name="q" id="search-bar">
@@ -28,10 +21,6 @@
                             <line x1="15" y1="15" x2="20" y2="20"></line>
                         </svg>
                     </div>
-                </div>
-                <div id="search-buttons">
-                    <input type="submit" value="Google Search" name="btnK">
-                    <input type="submit" value="I'm Feeling Lucky" name="btnI">
                 </div>
             </form>
         </div>
